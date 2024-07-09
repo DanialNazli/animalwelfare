@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Welfare</title>
+    <link rel="stylesheet" href="externalpr.css">
+    <link rel="icon" type="image" href="images/wild-animals.png">
+    <style>
+        /* Internal styles specific to the "Our Work" page */
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            border-bottom: 2px solid orange;
+            padding-bottom: 0.5rem;
+            color: white; /* Ensure h3 color */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+            grid-template-rows: repeat(3, 1fr);    /* Adjust the number of rows as needed */
+            gap: 1rem; /* Adjust the gap between the grid items */
+        }
+
+        .grid-item {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            color: black;
+        }
+
+        /* Adjust grid item positions and sizes */
+        .grid-item:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .grid-item:nth-child(2) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .grid-item:nth-child(3) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .grid-item:nth-child(4) {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .grid-item:nth-child(5) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .grid-item:nth-child(6) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .grid-item:nth-child(7) {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .primary-programme {
+            order: 2; /* Change this to control order */
+        }
+
+        .highschool-programme {
+            order: 1; /* Change this to control order */
+        }
+        /* Add more styles as needed for additional grid items */
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .grid-item {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            color: black; /* Ensure text color */
+        }
+
+        .grid-item:hover {
+            transform: translateY(-50px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 50%;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: orange;
+            padding: 10px;
+            color: white; /* Footer text color */
+        }
+
+        footer a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home.html">  <h1>Animal Welfare Organisation</h1> </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="Donation1.html">Donation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="past-programs">
+            <h3>Past Programs</h3>
+            <div class="grid-container">
+                <article class="grid-item">
+                    <img src="images/IMG_3258.jpg" alt="Save the Strays Campaign">
+                    <h3>Save the Strays Campaign</h3>
+                    <p>This program focused on rescuing and providing shelter to stray animals in the urban areas. Over 500 animals were successfully rehomed.</p>
+                    <p>Date: 2023-05-10</p>
+                </article>
+                <article class="grid-item">
+                    <img src="images/pcs_1x.jpg" alt="Wildlife Conservation Initiative">
+                    <h3>Wildlife Conservation Initiative</h3>
+                    <p>Aimed at protecting endangered wildlife through community education and conservation efforts. It included workshops and fieldwork activities.</p>
+                    <p>Date: 2022-11-22</p>
+                </article>
+                <!-- Add more past programs as needed -->
+                <article class="grid-item">
+                    <img src="images/catp_2x.jpg" alt="Cat Assisted Therapy">
+                    <h3>Cat Assisted Therapy</h3>
+                    <p>It’s a therapeutic playground where visitors can play with cats, play at the playground and enjoy relaxing music!</p>
+                    <p>Date: 2022-05-02</p>
+                </article>
+            </div>
+        </section>
+        <section id="future-schedule">
+            <h3>Future Schedule</h3>
+            <div class="grid-container">
+                <article class="grid-item">
+                    <img src="images/HealthCare1.jpg" alt="Animal Health Camp">
+                    <h3>Animal Health Camp</h3>
+                    <p>Upcoming health camp for domestic animals in rural areas, providing free veterinary services and education on animal care.</p>
+                    <p>Date: 2024-07-15</p>
+                </article>
+                <article class="grid-item">
+                    <img src="images/Awareness.png" alt="Community Awareness Drive">
+                    <h3>Community Awareness Drive</h3>
+                    <p>A series of events to raise awareness about animal welfare and promote humane treatment of animals through interactive sessions and activities.</p>
+                    <p>Date: 2024-09-10</p>
+                </article>
+            </div>
+        </section>
+        <section id="education-programs">
+            <h3>Animal Welfare Education</h3>
+            <div class="grid-container">
+                <article class="grid-item">
+                    <img src="images/PrimaryCat.webp" alt="Primary School Programme">
+                    <h3>Primary School Programme</h3>
+                    <p>Our Primary Education programs teach young learners about animal welfare while nurturing their love all living creatures</p>
+                </article>
+                <article class="grid-item">
+                    <img src="images/HighSchool.jpg" alt="High School Programme">
+                    <h3>High School Programme</h3>
+                    <p>Our sessions engage students using powerful visual presentations, challenging real life cruelty cases and raising awareness around animal welfare campaigns</p>
+                </article>
+                <!-- Add more future events as needed -->
+            </div>
+        </section>
+        </main>
+
+    <footer>
+        <h2>Contact Us Now!</h2>
+        <a href="https://instagram.com/danialnazli._"> Instagram </a>
+        <a href="https://facebook.com/AnimalWelfairAssociation"> Facebook </a>
+        <a href="https://tiktok.com/animalmalaysia"> Tiktok </a>
+        <p>&copy; 2024 Animal Welfare Organization. All rights reserved.</p>
+    </footer>
+</body>
+</html>

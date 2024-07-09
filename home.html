@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Welfare</title>
+    
+    <style type="text/css">
+        .content {
+            display: flex;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .content .table, .content .form {
+            padding: 20px;
+            background-color: rgba(0, 128, 128, 0.7);
+            border-radius: 10px;
+        }
+
+        .content .table {
+            width: 66.66%;
+            margin-right: 10px;
+        }
+
+        .content .form {
+            width: 33.33%;
+        }
+
+        .form input[type="text"], .form input[type="email"], .form input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form input[type="submit"]:hover {
+            background-color: #006666;
+        }
+    </style>
+    <link rel="stylesheet" href="externalpr.css">
+    <link rel="icon" type="image" href="images/wild-animals.png">
+</head>
+
+
+<body>
+    <header>
+        <a href="home.html">  <h1>Animal Welfare Organisation</h1> </a>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="Donation1.html">Donation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content">
+            <div class="table">
+                <h2>Vision</h2>
+                <p>To save as many stray animal as can</p>
+
+                    <h2>Mission</h2>
+                <p>Be active in any animal program either organised by goverment or NGO</p>
+
+
+                <h2>Objectives</h2>
+                <p>The primary objective of an animal welfare organization is to ensure the humane treatment and well-being of animals.</br> This involves advocating for better living conditions, proper nutrition, and adequate medical care.</br> They work to prevent cruelty and abuse through education, legislation, and direct intervention.</br>
+
+Another key objective is to influence and implement policies that protect animals from exploitation and harm.</br> Animal welfare organizations collaborate with government agencies, policymakers, and advocacy groups.</br> They engage in public campaigns and lobbying efforts to create a societal shift towards more compassionate treatment of all animals.</p>
+
+            </div>
+
+            <div class="form">
+                <h3>Registration Form</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contact Us Now!</h2>
+        <a href="https://instagram.com/danialnazli._"> Instagram </a>
+        <a href="https://facebook.com/AnimalWelfairAssociation"> Facebook </a>
+        <a href="https://tiktok.com/animalmalaysia"> Tiktok </a>
+        <p>&copy; 2024 Animal Welfare Organization. All rights reserved.</p>
+    </footer>
+</body>
+</html>
